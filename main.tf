@@ -29,3 +29,7 @@ variable "nome_droplet" {}
 variable "regiao" {}
 variable "nome_droplet" {}
 variable "setup_droplet" {}
+
+output "ip_droplet" {
+    value = digitalocean_droplet.vm_live_tf.ipv4_address  
+}
